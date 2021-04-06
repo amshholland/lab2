@@ -4,43 +4,67 @@
 body {
     background: #f9fafc;
     font-family: "Open Sans";
-    color:#000;
-}
-
-/* Navbar links*/
-li {
-    list-style-type: none;
 }
 
 a {
     text-decoration: none;
-    color: #000;
+    color: #69696a;
 }
 
-.grey{
-    color: #69696a;
+ul {
+    padding: 0;
+}
+
+.chirpus, a.black {
+    font-weight: bolder;
+    justify-content: flex-start;
+    color: #000;
+    flex: 1;
+}
+
+/* Navbar */
+.header {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-;
+}
+
+li {
+    list-style-type: none;
+    padding: 3px 15px 0 0;
+}
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+ul .button {
+    margin-top: 10px;
 }
 
 .button {
     background-color: #000;
     color: #fff;
-    width: 100%;
+    border-radius: 20px;
+    text-align: center;
+    padding: 5px;
 }
 
 /* Details section */
 p {
     border-left: 2px solid #69696a;
+    color: #69696a;
+    padding-left: 10px;
 }
 
-footer {
-    background-color: rgba(247, 193, 162, 0.7)
-}
-
-footer ul {
+.footer {
+    background-color: rgba(247, 193, 162, 0.7);
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
 }
 
 footer .chirpus {
@@ -51,21 +75,30 @@ footer .chirpus {
 
 /* Desktop design */
 @media screen and (min-width: 768px) {
-
-    ul {
-        display: flex;
+    .header {
         flex-direction: row;
-        justify-content: flex-end;
-        align-items: center;
     }
 
-    .chirpus {
-        margin-left: 0;
-        flex: 1;
+    ul .button {
+        margin-top: 0px;
+        padding: 5px 7px;
     }
 
-    p {
+    .container {
         width: 50%;
+    }
+
+    circle {
+        background-color: ;
+        opacity: ;
+        border-radius: ;
+        position: absolute;
+        display: none;
+    }
+
+    .pink {
+        width: ;
+        height: ;
     }
 }
 
