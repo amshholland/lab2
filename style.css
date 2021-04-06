@@ -1,4 +1,4 @@
-body{
+body {
     background: #f9fafc;
     font-family: "Open Sans";
 }
@@ -12,11 +12,16 @@ a {
     color: #000;
 }
 
+/* chirpus inc. nav link */ /***************************************/
+/*.bold a {
+    font-family: "Open Sans" bold;
+}*/
+
 .grey a {
     color: #69696a;
 }
 
-button {
+a.button {
     background-color: #000;
     color: #fff;
     width: 100%;
