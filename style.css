@@ -62,7 +62,7 @@ ul .button {
 
 .button {
     background-color: #000;
-    color: #fff;
+    color: #FFF;
     border-radius: 20px;
     text-align: center;
     padding: 5px;
@@ -76,12 +76,9 @@ p {
     padding-left: 12px;
 }
 
-footer {
-    width: 100%;
-}
-
 .footer {
     background-color: rgba(247, 193, 162, 0.7);
+    position: fixed;
     display: flex;
     bottom: 0;
     align-items: center;
