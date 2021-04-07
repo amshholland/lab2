@@ -4,6 +4,9 @@
 body {
     background: #f9fafc;
     font-family: "Open Sans";
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 a {
@@ -27,7 +30,7 @@ ul {
     padding: 0;
     display: flex;
     flex-direction: column;
-    align-items: flex-;
+    align-items: flex-start;
 }
 
 li {
@@ -35,12 +38,17 @@ li {
     padding: 3px 15px 0 0;
 }
 
-
+main {
+    flex: 1;
+}
 
 .container {
     display: flex;
     flex-direction: column;
-    
+}
+
+.circles {
+    visibility: hidden;
 }
 
 ul .button {
@@ -62,9 +70,11 @@ p {
     padding-left: 10px;
 }
 
+
 .footer {
     background-color: rgba(247, 193, 162, 0.7);
     display: flex;
+    bottom: 0;
 }
 
 footer .chirpus {
@@ -84,22 +94,51 @@ footer .chirpus {
         padding: 5px 7px;
     }
 
+    main {
+        position: relative;
+    }
+
     .container {
         width: 50%;
     }
 
-    circle {
-        background-color: ;
-        opacity: ;
-        border-radius: ;
+    .circles {
+        visibility: visible;
+    }
+
+    .pink, .beige, .purple {
+        border-radius: 50%;
+        opacity: .85;
         position: absolute;
-        display: none;
     }
 
     .pink {
-        width: ;
-        height: ;
+        background-color: rgba(247, 136, 167, 0.6);
+        width: 200px;
+        height: 200px;
+        right: 60px;
+        top: 10vh;
     }
+
+    .beige {
+        background-color: rgba(247, 193, 162, 0.7);
+        width: 150px;
+        height: 150px;
+        right: 10px;
+        top: 32vh;
+    }
+ 
+    .purple {
+        background-color: rgba(207, 130, 213, 0.6);
+        width: 100px;
+        height: 100px;
+        right: 10px;
+        top: 20vh;
+    }
+
+
+
+
 }
 
 
